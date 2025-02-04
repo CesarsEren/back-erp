@@ -46,20 +46,19 @@ public class B_EncomiendasController {
                         .map(data -> {
                                     B_EncomiendasDto bEncomiendasDto = new B_EncomiendasDto();
                                     bEncomiendasDto.setNro(data.getNro().toString());
-                                    bEncomiendasDto.setCostototal(data.getTotalreal().toString());
+                                    bEncomiendasDto.setCostototal(data.getTotalReal().toString());
 
                                     bEncomiendasDto.setPesototal(data.getKilos().toString());
                                     bEncomiendasDto.setSerienumero(data.getSerie().concat("-").concat(data.getNumero()));
                                     bEncomiendasDto.setNrobultos((
-                                            Double.parseDouble(Optional.ofNullable(data.getCantidad1()).orElse("0")) +
-                                                    Double.parseDouble(Optional.ofNullable(data.getCantidad2()).orElse("0")) +
-                                                    Double.parseDouble(Optional.ofNullable(data.getCantidad3()).orElse("0")) +
-                                                    Double.parseDouble(Optional.ofNullable(data.getCantidad4()).orElse("0"))) +
-                                            ""
-                                    );
+                                            Double.parseDouble(Optional.ofNullable(data.getCantidad1().trim()).orElse("0")) +
+                                                    Double.parseDouble(Optional.ofNullable(data.getCantidad2().trim()).orElse("0")) +
+                                                    Double.parseDouble(Optional.ofNullable(data.getCantidad3().trim()).orElse("0")) +
+                                                    ""
+                                    ));
                                     bEncomiendasDto.setRemitente(data.getRemitente().trim());
                                     bEncomiendasDto.setConsignado(data.getConsignado().trim());
-                                    bEncomiendasDto.setDestinod(data.getDestino1d().trim());
+                                    bEncomiendasDto.setDestinod(data.getDestino1D().trim());
                                     return bEncomiendasDto;
                                 }
                         ).collect(Collectors.toList());
@@ -68,7 +67,6 @@ public class B_EncomiendasController {
                 new UtilGenerico<Page<B_EncomiendasDto>>()
                         .crearMensaje(new PageImpl<>(result, pageable, bEncomiendas.getTotalElements()), 200, "listado Correcto", "Consulta realizada con éxito");
         return new ResponseEntity<>(resultado, util.validarEstadoRespuesta(resultado.getOut_estado()));
-
 
     }
 

@@ -40,7 +40,6 @@ public class AgenciaController {
     public ResponseEntity<Response<List<V_AgenciasDto>>> getAll() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication != null) {
-
             log.info("User: " + authentication.getName());
         } else {
             log.info("No user is authenticated");

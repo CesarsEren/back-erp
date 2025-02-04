@@ -8,10 +8,11 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Repository
-public interface B_EncomiendasRepository extends JpaRepository<B_Encomiendas,Integer> {
+public interface B_EncomiendasRepository extends JpaRepository<B_Encomiendas, BigDecimal> {
 
 
     @Query("SELECT be FROM CierreManifiestoD as cmd  " +

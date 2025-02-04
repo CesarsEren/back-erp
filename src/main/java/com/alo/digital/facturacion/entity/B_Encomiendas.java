@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 import java.time.LocalDateTime;
+
 import lombok.Data;
 
 @Entity
@@ -27,94 +28,94 @@ public class B_Encomiendas {
     @Column(name = "destino")
     private BigDecimal destino;
 
-    @Column(name = "destinod", length = 1)
+    @Column(name = "destinod")
     private String destinoD;
 
     @Column(name = "fechaviaje")
     private LocalDateTime fechaViaje;
 
-    @Column(name = "horaviaje", length = 1)
+    @Column(name = "horaviaje")
     private String horaViaje;
 
-    @Column(name = "horaviajeini", length = 1)
+    @Column(name = "horaviajeini")
     private String horaViajeIni;
 
     @Column(name = "fechaemision")
     private LocalDateTime fechaEmision;
 
-    @Column(name = "empresa", length = 1)
+    @Column(name = "empresa")
     private String empresa;
 
-    @Column(name = "empresad", length = 1)
+    @Column(name = "empresad")
     private String empresaD;
 
-    @Column(name = "documento", length = 1)
+    @Column(name = "documento")
     private String documento;
 
-    @Column(name = "documentod", length = 1)
+    @Column(name = "documentod")
     private String documentoD;
 
-    @Column(name = "serie", length = 1)
+    @Column(name = "serie")
     private String serie;
 
-    @Column(name = "numero", length = 1)
+    @Column(name = "numero")
     private String numero;
 
-    @Column(name = "destino1", length = 1)
+    @Column(name = "destino1")
     private String destino1;
 
-    @Column(name = "destino1d", length = 1)
+    @Column(name = "destino1d")
     private String destino1D;
 
-    @Column(name = "otraoficina", length = 1)
+    @Column(name = "otraoficina")
     private String otraOficina;
 
-    @Column(name = "transaccion", length = 1)
+    @Column(name = "transaccion")
     private String transaccion;
 
-    @Column(name = "pago", length = 1)
+    @Column(name = "pago")
     private String pago;
 
-    @Column(name = "valija", length = 1)
+    @Column(name = "valija")
     private String valija;
 
-    @Column(name = "ruc", length = 1)
+    @Column(name = "ruc")
     private String ruc;
 
-    @Column(name = "dnigiro", length = 1)
+    @Column(name = "dnigiro")
     private String dniGiro;
 
-    @Column(name = "razon", length = 1)
+    @Column(name = "razon")
     private String razon;
 
-    @Column(name = "remitente", length = 1)
+    @Column(name = "remitente")
     private String remitente;
 
-    @Column(name = "remitentd", length = 1)
+    @Column(name = "remitented")
     private String remitenteD;
 
-    @Column(name = "consignado", length = 1)
+    @Column(name = "consignado")
     private String consignado;
 
-    @Column(name = "consignadod", length = 1)
+    @Column(name = "consignadod")
     private String consignadoD;
 
-    @Column(name = "cantidad1", length = 1)
+    @Column(name = "cantidad1")
     private String cantidad1;
 
-    @Column(name = "descripcion1", length = 1)
+    @Column(name = "descripcion1")
     private String descripcion1;
 
-    @Column(name = "cantidad2", length = 1)
+    @Column(name = "cantidad2")
     private String cantidad2;
 
-    @Column(name = "descripcion2", length = 1)
+    @Column(name = "descripcion2")
     private String descripcion2;
 
-    @Column(name = "cantidad3", length = 1)
+    @Column(name = "cantidad3")
     private String cantidad3;
 
-    @Column(name = "descripcion3", length = 1)
+    @Column(name = "descripcion3")
     private String descripcion3;
 
     @Column(name = "montogiro")
@@ -126,67 +127,70 @@ public class B_Encomiendas {
     @Column(name = "total")
     private BigDecimal total;
 
-    @Column(name = "usuario", length = 1)
+    @Column(name = "totalreal")
+    private BigDecimal totalReal;
+
+    @Column(name = "usuario")
     private String usuario;
 
-    @Column(name = "terminal", length = 1)
+    @Column(name = "terminal")
     private String terminal;
 
-    @Column(name = "agencia", length = 1)
+    @Column(name = "agencia")
     private String agencia;
 
-    @Column(name = "agenciad", length = 1)
+    @Column(name = "agenciad")
     private String agenciaD;
 
     @Column(name = "comentario")
     private String comentario;
 
-    @Column(name = "anulado", length = 1)
+    @Column(name = "anulado")
     private String anulado;
 
-    @Column(name = "sistema", length = 1)
+    @Column(name = "sistema")
     private String sistema;
 
-    @Column(name = "bus", length = 1)
+    @Column(name = "bus")
     private String bus;
 
-    @Column(name = "pagado", length = 1)
+    @Column(name = "pagado")
     private String pagado;
 
     @Column(name = "fechacancelacion")
     private LocalDateTime fechaCancelacion;
 
-    @Column(name = "usuario1", length = 1)
+    @Column(name = "usuario1")
     private String usuario1;
 
-    @Column(name = "terminal1", length = 1)
+    @Column(name = "terminal1")
     private String terminal1;
 
-    @Column(name = "agencia1", length = 1)
+    @Column(name = "agencia1")
     private String agencia1;
 
-    @Column(name = "agenciad1", length = 1)
+    @Column(name = "agenciad1")
     private String agenciaD1;
 
-    @Column(name = "dni", length = 1)
+    @Column(name = "dni")
     private String dni;
 
-    @Column(name = "nombreapellido", length = 1)
+    @Column(name = "nombreapellido")
     private String nombreApellido;
 
-    @Column(name = "observacion", length = 1)
+    @Column(name = "observacion")
     private String observacion;
 
-    @Column(name = "horareg", length = 1)
+    @Column(name = "horareg")
     private String horaReg;
 
-    @Column(name = "desechado", length = 1)
+    @Column(name = "desechado")
     private String desechado;
 
-    @Column(name = "otro", length = 1)
+    @Column(name = "otro")
     private String otro;
 
-    @Column(name = "estado", length = 1)
+    @Column(name = "estado")
     private String estado;
 
     @Column(name = "domicilio")
@@ -198,19 +202,19 @@ public class B_Encomiendas {
     @Column(name = "salidar")
     private BigDecimal salidaR;
 
-    @Column(name = "agenciar", length = 1)
+    @Column(name = "agenciar")
     private String agenciaR;
 
-    @Column(name = "agenciadr", length = 1)
+    @Column(name = "agenciadr")
     private String agenciaDR;
 
     @Column(name = "destinor")
     private BigDecimal destinoR;
 
-    @Column(name = "destinodr", length = 1)
+    @Column(name = "destinodr")
     private String destinoDR;
 
-    @Column(name = "codigosecreto", length = 1)
+    @Column(name = "codigosecreto")
     private String codigoSecreto;
 
     @Column(name = "nrodoc", length = 255, columnDefinition = "varchar DEFAULT ''")
@@ -219,10 +223,10 @@ public class B_Encomiendas {
     @Column(name = "cc_mitsui")
     private Integer ccMitsui;
 
-    @Column(name = "tipoprecio", length = 1)
+    @Column(name = "tipoprecio")
     private String tipoPrecio;
 
-    @Column(name = "codproducto", length = 1)
+    @Column(name = "codproducto")
     private String codProducto;
 
     @Column(name = "guiasclientes")
@@ -233,6 +237,24 @@ public class B_Encomiendas {
 
     @Column(name = "encoestado")
     private String encoEstado;
+
+    @Column(name = "um1")
+    private String UM1;
+
+    @Column(name = "um2")
+    private String UM2;
+
+    @Column(name = "um3 ")
+    private String UM3;
+
+    @Column(name = "um")
+    private String UM;
+
+    @Column(name = "ruc_consignado")
+    private String ruc_consignado;
+
+    @Column(name = "dni_consignado")
+    private String dni_consignado;
 
     // Continúa de manera similar con el resto de columnas...
 }

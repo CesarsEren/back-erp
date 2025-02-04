@@ -54,7 +54,7 @@ public class V_Empresas {
     @Column(name = "ubigeo", length = 1)
     private String ubigeo;
 
-    @Column(name = "codigo_pais")
+    @Column(name = "codigopais")
     private String codigoPais;
 
     @Column(name = "departamento")
@@ -69,6 +69,6 @@ public class V_Empresas {
     @Column(name = "urbanización")
     private String urbanizacion;
 
-    @Column(name = "codigo_establecimiento_anexo", length = 1)
+    @Column(name = "codigoestablecimientoanexo", length = 1)
     private String codigoEstablecimientoAnexo;
 }

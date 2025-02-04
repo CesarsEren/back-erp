@@ -31,5 +31,7 @@ public class CierreManifiesto {
     String tipoManifiestoD;
     @Column(name = "Terminal")
     String terminal;
+    @Column(name = "grts_generados")
+    Boolean grtsGenerados;
 
 }

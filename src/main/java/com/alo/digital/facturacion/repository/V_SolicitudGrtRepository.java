@@ -16,7 +16,10 @@ public interface V_SolicitudGrtRepository extends JpaRepository<V_SolicitudGrt, 
     @Query("select vs from V_SolicitudGrt vs where vs.idManifiesto = :idManifiesto")
     public Optional<V_SolicitudGrt> findByidManifiesto(Integer idManifiesto);
 
+    @Query("SELECT vs FROM V_SolicitudGrt vs where vs.generado = 2")
+    public List<V_SolicitudGrt> findSolicitudesGRT_PorGenerar();
+
     @Query("SELECT vs FROM V_SolicitudGrt vs where vs.generado = 1")
-    public List<V_SolicitudGrt> findSolicitudesGRT();
+    public List<V_SolicitudGrt> findSolicitudesGRT_Generadas();
 
 }

@@ -1,4 +1,4 @@
-package com.alo.digital.facturacion.service;
+package com.alo.digital.facturacion.service.impl;
 
 import com.alo.digital.facturacion.dto.Autenticacion;
 import com.alo.digital.facturacion.dto.Rol;
@@ -7,7 +7,6 @@ import com.alo.digital.facturacion.entity.V_Nivel;
 import com.alo.digital.facturacion.entity.V_Usuarios;
 import com.alo.digital.facturacion.repository.V_NivelRepository;
 import com.alo.digital.facturacion.repository.V_UsuarioRepository;
-import com.alo.digital.facturacion.vo.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

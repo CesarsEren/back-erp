@@ -327,4 +327,7 @@ public class B_ProgramacionSalida {
 
     @Column(name = "viajeespecial")
     private Boolean viajeEspecial;
+
+    @Column(name = "tercero")
+    private Boolean tercero;
 }

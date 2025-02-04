@@ -1,14 +1,12 @@
 package com.alo.digital.facturacion.jwt;
 
-import com.alo.digital.facturacion.repository.V_UsuarioRepository;
-import com.alo.digital.facturacion.service.UserDetailsServiceImpl;
+import com.alo.digital.facturacion.service.impl.UserDetailsServiceImpl;
 import com.alo.digital.facturacion.utilitario.Utilitario;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;

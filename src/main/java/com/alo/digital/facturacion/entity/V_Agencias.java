@@ -15,49 +15,49 @@ import java.math.BigDecimal;
 public class V_Agencias {
 
     @Id
-    @Column(name = "codigo", length = 1)
+    @Column(name = "codigo")
     private String codigo;
 
-    @Column(name = "detalle", length = 1)
+    @Column(name = "detalle")
     private String detalle;
 
-    @Column(name = "ciudad", length = 1)
+    @Column(name = "ciudad")
     private String ciudad;
 
-    @Column(name = "ciudadD", length = 1)
+    @Column(name = "ciudadD")
     private String ciudadD;
 
-    @Column(name = "direccion", length = 1)
+    @Column(name = "direccion")
     private String direccion;
 
-    @Column(name = "telefono", length = 1)
+    @Column(name = "telefono")
     private String telefono;
 
-    @Column(name = "destino", length = 1)
+    @Column(name = "destino")
     private String destino;
 
-    @Column(name = "color", length = 1)
+    @Column(name = "color")
     private String color;
 
-    @Column(name = "intermedio", length = 1)
+    @Column(name = "intermedio")
     private String intermedio;
 
-    @Column(name = "sistema", length = 1)
+    @Column(name = "sistema")
     private String sistema;
 
-    @Column(name = "codliq", length = 1)
+    @Column(name = "codliq")
     private String codLiq;
 
-    @Column(name = "giroradial", length = 1)
+    @Column(name = "giroradial")
     private String giroRadial;
 
-    @Column(name = "agenciavje", length = 1)
+    @Column(name = "agenciavje")
     private String agenciaVje;
 
-    @Column(name = "manejacodsecreto", length = 1)
+    @Column(name = "manejacodsecreto")
     private String manejaCodSecreto;
 
-    @Column(name = "codigoweb", length = 1)
+    @Column(name = "codigoweb")
     private String codigoWeb;
 
     @Column(name = "longitud")
@@ -66,13 +66,13 @@ public class V_Agencias {
     @Column(name = "latitud")
     private String latitud;
 
-    @Column(name = "responsable", length = 1)
+    @Column(name = "responsable")
     private String responsable;
 
-    @Column(name = "responsabled", length = 1)
+    @Column(name = "responsabled")
     private String responsableD;
 
-    @Column(name = "puntoventa", length = 1)
+    @Column(name = "puntoventa")
     private String puntoVenta;
 
     @Column(name = "giros")
@@ -110,6 +110,9 @@ public class V_Agencias {
 
     @Column(name = "tercero")
     private Boolean tercero;
+
+    @Column(name = "ubigeo")
+    private String ubigeo;
 
     // Getters y setters...
 }
